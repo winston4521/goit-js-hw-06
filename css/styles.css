@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+.li_item:not(:last-child) {
+  margin-right: 30px;
+}
+.li_item img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
