@@ -5,8 +5,9 @@ const bodyEl = document.querySelector('body');
 btn.addEventListener('click', backGroundColorHandler);
 
 function backGroundColorHandler() {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  bgcColor.textContent = getRandomHexColor();
+  const colorEl = getRandomHexColor();
+  bodyEl.style.backgroundColor = colorEl;
+  bgcColor.textContent = colorEl;
 }
 
 function getRandomHexColor() {
@@ -14,4 +15,3 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-
